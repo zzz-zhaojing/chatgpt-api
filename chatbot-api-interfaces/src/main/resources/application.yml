@@ -1,2 +1,10 @@
 server:
   port: 8090
+
+spring:
+  jackson:
+    time-zone: GMT
+chatbot-api:
+  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+  cookie: _ga=GA1.2.1410666252.1679738430; _gid=GA1.2.1346778067.1679738430; cf_clearance=_LryaxrWczx7Q6hqMI4hA_uboPtJd.4hncdSC6YQ5zs-1679776783-0-1-f2cb5ed.b946c97a.582dea0d-160; intercom-device-id-dgkjq2bp=7103ad66-0480-4a74-a659-0f1c1e83f450; intercom-session-dgkjq2bp=eU5xTEtKa2pDZ3hIK1E2Mm40aFpqemVFbVJSSHAzYWFQVDlHMlZvV1hLNUFTblJ3bmxaclpyMkF0U2JVSmpjMi0taWN6OENpTUlmNDJGMzVkWnBjVDBFUT09--3e4ce73309b097ad41def2a968a599d29224ad7c
+  openAIkey: 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
