@@ -1,0 +1,1 @@
+docker build -f ./Dockerfile -t charbot-api:1.0

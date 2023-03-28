@@ -1,10 +1,31 @@
 server:
   port: 8090
 
-spring:
-  jackson:
-    time-zone: GMT
+# 分组任务配置
 chatbot-api:
   user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
   cookie: _ga=GA1.2.1410666252.1679738430; _gid=GA1.2.1346778067.1679738430; cf_clearance=_LryaxrWczx7Q6hqMI4hA_uboPtJd.4hncdSC6YQ5zs-1679776783-0-1-f2cb5ed.b946c97a.582dea0d-160; intercom-device-id-dgkjq2bp=7103ad66-0480-4a74-a659-0f1c1e83f450; intercom-session-dgkjq2bp=eU5xTEtKa2pDZ3hIK1E2Mm40aFpqemVFbVJSSHAzYWFQVDlHMlZvV1hLNUFTblJ3bmxaclpyMkF0U2JVSmpjMi0taWN6OENpTUlmNDJGMzVkWnBjVDBFUT09--3e4ce73309b097ad41def2a968a599d29224ad7c
   openAIkey: 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
+
+  launchList: group01,group02 # 启动几组，就配置几组
+  group01:
+    groupName: ChatGPT AI 问答助手
+    groupId: 28885518425541 # 知识星球ID
+    cookie:  # 知识星球个人cookie信息
+    openAiKey:  # 自行申请 https://beta.openai.com/overview 或者联系小傅哥 fustack 付费申请【购买虚拟号码等需要支付】。
+    cronExpression: 0/30 * * * * ? # 执行的频次配置，参考：cron.qqe2.com
+    silenced: false
+  group02:
+    groupName: 码农会锁
+    groupId: 28885518425541 # 知识星球ID
+    cookie:  # 知识星球个人cookie信息
+    openAiKey:  # 自行申请 https://beta.openai.com/overview 或者联系小傅哥 fustack 付费申请【购买虚拟号码等需要支付】。
+    cronExpression: 0/30 * * * * ? # 执行的频次配置，参考：cron.qqe2.com
+    silenced: true
+
+
+
+spring:
+  jackson:
+    time-zone: GMT
+
